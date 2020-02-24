@@ -28,9 +28,24 @@
 		}
 
 		.cover-heading {
-			font-size: 10vw;
+			font-size: 9vw;
 			
 			text-shadow: 4px 3px black;
+		}
+
+		.google-maps {
+			position: relative;
+			padding-bottom: 75%;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.google-maps iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
 		}
 
 	</style>
@@ -60,19 +75,55 @@
 
 <div class="container-fluid">
 	<h3>About</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus at nisi a suscipit. Maecenas auctor risus vitae turpis efficitur, nec pharetra purus bibendum. Praesent semper diam enim, non ultrices magna auctor ac. Vestibulum pulvinar sollicitudin maximus. Quisque at ultricies nisi. In congue faucibus metus, et eleifend nulla consectetur dapibus. Vivamus condimentum vitae justo vitae mollis. Sed ac hendrerit mauris, non vulputate ex. Suspendisse potenti. Curabitur elementum malesuada malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean at ipsum neque. Maecenas pellentesque sollicitudin odio non maximus. Aenean lobortis tellus ac convallis accumsan.<br><br>Sed scelerisque erat sed gravida rhoncus. Curabitur sed ipsum sit amet massa faucibus accumsan id quis lectus. Aenean consectetur dolor et massa varius, nec hendrerit orci dapibus. Morbi eu tellus ac risus vehicula tempor. Nullam elementum enim et nisi interdum, ac suscipit diam lobortis. Aenean tristique vestibulum pharetra. Donec et nisl nulla. Nullam eget magna ut dui sagittis maximus. Donec eget tortor hendrerit, lobortis mauris at, aliquam risus. Praesent in nibh massa. Aliquam varius ornare orci eu tempor.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus at nisi a suscipit. Maecenas auctor risus vitae turpis efficitur, nec pharetra purus bibendum. Praesent semper diam enim, non ultrices magna auctor ac. Vestibulum pulvinar sollicitudin maximus. Quisque at ultricies nisi. In congue faucibus metus, et eleifend nulla consectetur dapibus. Vivamus condimentum vitae justo vitae mollis. Sed ac hendrerit mauris, non vulputate ex. Suspendisse potenti. Curabitur elementum malesuada malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean at ipsum neque. Maecenas pellentesque sollicitudin odio non maximus. Aenean lobortis tellus ac convallis accumsan.</p>
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="assets/cr1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/cr2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/cr3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
 	<hr>
 	<h3>Opening Hours</h3>
 	<p>Monday-Friday: 9am-8pm<br>Saturday: 10am-8pm<br>Sunday: 10am-6pm</p>
 	<hr>
 	<h3>How to find us</h3>
+	<div class="google-maps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1243.1800106260482!2d-2.58825762392928!3d51.45154606637111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e7bbb84a6f3%3A0xbd706282eef6e88c!2s80%20Victoria%20St%2C%20Redcliffe%2C%20Bristol%20BS1%206DR!5e0!3m2!1sen!2suk!4v1582551999937!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> </div>
+	<p>Dream Capture<br>80 Victoria St<br>Redcliffe, Bristol<br>BS1 6DR<br>Telephone number:<br>Email:</p>
 
 	<hr>
 	<h3>Become a member</h3>
-
-	
-
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius nec elit eleifend commodo. In porttitor lectus sed lorem vestibulum, sed laoreet tellus vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris vitae est quam. Phasellus eu leo urna. Suspendisse nisi ligula, lobortis vel feugiat vitae, imperdiet at magna. Duis turpis mauris, efficitur porta sem sit amet, commodo malesuada mauris. Etiam tellus lectus, tempus vel molestie in, venenatis ut felis.</p>
+	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputName1">Name</label>
+    <input type="name" class="form-control" id="exampleInputName1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">I agree to terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+<hr>
 </div>
+<footer class="mastfoot mt-5">
+    <div class="inner">
+      <p>Dream Capture Museum<br>80 Victoria St<br>BS1 6DR, Bristol<br>01234567890<br>email@email.com</p>
+    </div>
+  </footer>
 </div>
 
 
